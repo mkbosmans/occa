@@ -50,7 +50,7 @@ else()
   add_compile_definitions(OCCA_THREAD_SHARABLE_ENABLED=0)
 endif()
 
-set(MAX_NUM_KERNEL_ARGS_DEFAULT "128")
+set(MAX_NUM_KERNEL_ARGS_DEFAULT "200")
 set(MAX_NUM_KERNEL_ARGS ${MAX_NUM_KERNEL_ARGS_DEFAULT} CACHE STRING "The maximum number of allowed kernel arguments")
 if (${MAX_NUM_KERNEL_ARGS} GREATER ${MAX_NUM_KERNEL_ARGS_DEFAULT})
   execute_process(COMMAND python --version OUTPUT_VARIABLE python_version)
